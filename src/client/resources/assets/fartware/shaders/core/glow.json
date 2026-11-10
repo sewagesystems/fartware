@@ -1,0 +1,19 @@
+{
+	"vertex": "fartware:blur",
+	"fragment": "fartware:glow",
+	"attributes": [
+		"Position"
+	],
+	"samplers": [
+		{ "name": "Sampler0" },
+		{ "name": "Sampler1" }
+	],
+	"uniforms": [
+		{ "name": "ScreenSize", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+		{ "name": "Time", "type": "float", "count": 1, "values": [ 0.0 ] },
+		{ "name": "Strength", "type": "float", "count": 1, "values": [ 1.0 ] },
+		{ "name": "Color0", "type": "float", "count": 3, "values": [ 0.0, 0.8, 1.0 ] },
+		{ "name": "Color1", "type": "float", "count": 3, "values": [ 0.4, 0.3, 1.0 ] },
+		{ "name": "Color2", "type": "float", "count": 3, "values": [ 0.2, 0.5, 1.0 ] }
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "fartware.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"KeyboardInputMixin",
+		"LocalPlayerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "fartware",
+	"version": "${version}",
+	"name": "fartware",
+	"description": "Utility mod base with a click GUI, modules, hotkeys and chat commands.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fartware/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fartware.Fartware"
+		],
+		"client": [
+			"fartware.client.FartwareClient"
+		]
+	},
+	"mixins": [
+		"fartware.mixins.json",
+		{
+			"config": "fartware.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
